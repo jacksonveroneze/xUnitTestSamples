@@ -59,7 +59,7 @@ namespace xUnitTestSamples.Basic.Tests
             Exception exception = Assert.Throws<Exception>(() => AgentFactory.Create("Jackson", 250));
 
             // Assert
-            Assert.Equal("Sal·rio inferior ao permitido", exception.Message);
+            Assert.Equal("Sal√°rio inferior ao permitido", exception.Message);
         }
 
         [Fact(DisplayName = "CriarDeveRetornarErroSalarioInferiorAoPermitido")]
@@ -70,7 +70,7 @@ namespace xUnitTestSamples.Basic.Tests
             Exception exception = Assert.Throws<Exception>(() => AgentFactory.Create("Jackson", 250));
 
             // Assert
-            Assert.Equal("Sal·rio inferior ao permitido", exception.Message);
+            Assert.Equal("Sal√°rio inferior ao permitido", exception.Message);
         }
 
         [Fact(DisplayName = "NaoDeveSerNuloOuVazio")]

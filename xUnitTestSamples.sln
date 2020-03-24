@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Unit Tests", "01 - Unit Tests", "{02BA280A-5530-41F8-8FFD-62929D7A37D0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Unit-Tests", "01-Unit-Tests", "{02BA280A-5530-41F8-8FFD-62929D7A37D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitTestSamples.Basic", "01 - Unit Tests\xUnitTestSamples.Basic\xUnitTestSamples.Basic.csproj", "{C00C6339-2D1B-4F1D-9B2A-F9139EAF7517}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitTestSamples.Basic", "01-Unit-Tests\xUnitTestSamples.Basic\xUnitTestSamples.Basic.csproj", "{C00C6339-2D1B-4F1D-9B2A-F9139EAF7517}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - TDD", "02 - TDD", "{372098FC-B418-4360-B973-3545827BA314}"
 EndProject
@@ -13,11 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Integration Tests", "0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - BDD", "04 - BDD", "{C56EEDBD-D376-4362-870E-BDAE33D8B052}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitTestSamples.Basic.Tests", "01 - Unit Tests\xUnitTestSamples.Basic.Tests\xUnitTestSamples.Basic.Tests.csproj", "{4F5E2AAD-3C2D-4946-B537-F22B04306A3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitTestSamples.Basic.Tests", "01-Unit-Tests\xUnitTestSamples.Basic.Tests\xUnitTestSamples.Basic.Tests.csproj", "{4F5E2AAD-3C2D-4946-B537-F22B04306A3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitTestSamples.Features", "01 - Unit Tests\xUnitTestSamples.Features\xUnitTestSamples.Features.csproj", "{00EF46D3-F77C-4613-B3F4-1C53A5815C4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitTestSamples.Features", "01-Unit-Tests\xUnitTestSamples.Features\xUnitTestSamples.Features.csproj", "{00EF46D3-F77C-4613-B3F4-1C53A5815C4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitTestSamples.Features.Tests", "01 - Unit Tests\xUnitTestSamples.Features.Tests\xUnitTestSamples.Features.Tests.csproj", "{70C55635-9445-45E1-9A90-AB3F04B711B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitTestSamples.Features.Tests", "01-Unit-Tests\xUnitTestSamples.Features.Tests\xUnitTestSamples.Features.Tests.csproj", "{70C55635-9445-45E1-9A90-AB3F04B711B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

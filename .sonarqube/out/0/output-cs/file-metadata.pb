@@ -1,0 +1,12 @@
+k
+b/home/jackson/workspace/xUnitTestSamples/01-Unit-Tests/xUnitTestSamples.Features/Clients/Client.csutf-8}
+t/home/jackson/workspace/xUnitTestSamples/01-Unit-Tests/xUnitTestSamples.Features/Clients/ClienteEmailNotification.csutf-8s
+j/home/jackson/workspace/xUnitTestSamples/01-Unit-Tests/xUnitTestSamples.Features/Clients/ClienteService.csutf-8u
+l/home/jackson/workspace/xUnitTestSamples/01-Unit-Tests/xUnitTestSamples.Features/Clients/ClienteValidacao.csutf-8w
+n/home/jackson/workspace/xUnitTestSamples/01-Unit-Tests/xUnitTestSamples.Features/Clients/IClienteRepository.csutf-8t
+k/home/jackson/workspace/xUnitTestSamples/01-Unit-Tests/xUnitTestSamples.Features/Clients/IClienteService.csutf-8o
+f/home/jackson/workspace/xUnitTestSamples/01-Unit-Tests/xUnitTestSamples.Features/Core/CpfValidation.csutf-8h
+_/home/jackson/workspace/xUnitTestSamples/01-Unit-Tests/xUnitTestSamples.Features/Core/Entity.csutf-8m
+d/home/jackson/workspace/xUnitTestSamples/01-Unit-Tests/xUnitTestSamples.Features/Core/IRepository.csutf-8>
+3/tmp/.NETCoreApp,Version=v3.1.AssemblyAttributes.csutf-8ž
+’/home/jackson/workspace/xUnitTestSamples/01-Unit-Tests/xUnitTestSamples.Features/obj/Debug/netcoreapp3.1/xUnitTestSamples.Features.AssemblyInfo.csutf-8
