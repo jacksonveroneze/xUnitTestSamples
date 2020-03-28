@@ -42,6 +42,7 @@ jobs:
  
       - name: Setup sonarqube
         uses: warchant/setup-sonar-scanner@v1
+        
       - name: Run sonarqube
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -53,6 +54,16 @@ jobs:
              -Dsonar.cs.opencover.reportsPaths="01-Unit-Tests/xUnitTestSamples.Features.Tests/coverage.opencover.xml, 01-Unit-Tests/xUnitTestSamples.Basic.Tests/coverage.opencover.xml"
              -Dsonar.exclusions="01-Unit-Tests/xUnitTestSamples.Features/**, 01-Unit-Tests/UnitTestSamples.Features.Tests/**"
              -Dsonar.coverage.exclusions="01-Unit-Tests/xUnitTestSamples.Features/**, 01-Unit-Tests/UnitTestSamples.Features.Tests/**"
-             -V:1.0.0
+             -Dsonar.projectVersion	:1.0.0
+             -Dsonar.pullrequest.key=${{ github.event.number }}
+             -Dsonar.pullrequest.branch=${{ github.HEAD_REF }}
+             -Dsonar.pullrequest.base=${{ github.BASE_REF }}
+             -Dsonar.pullrequest.github.repository=${{ github.repository }}
+             -Dsonar.scm.provider=git
+             -Dsonar.java.binaries=/tmp
+
+              
+              
+              
               
               
