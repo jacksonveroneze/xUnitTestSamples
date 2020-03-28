@@ -27,7 +27,19 @@ jobs:
       - name: Retrieve entire repository history
         run: |
           git fetch --prune --unshallow
-          
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.101
+
+      - name: Build with dotnet
+        run: dotnet build --configuration Release
+
+      - name: Run tests
+        run: |
+          dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+ 
       - name: Setup sonarqube
         uses: warchant/setup-sonar-scanner@v1
       - name: Run sonarqube
@@ -38,9 +50,9 @@ jobs:
              -Dsonar.organization=jacksonveroneze
              -Dsonar.host.url=https://sonarcloud.io/
              -Dsonar.projectKey=xUnitTestSamples
-             -Dsonar.cs.opencover.reportsPaths="01-Unit-Tests/xUnitTestSamples.Features.Tests/coverage.opencover.xml, 01-Unit-Tests/xUnitTestSamples.Basic.Tests/coverage.opencover.xml" \
-             -Dsonar.exclusions="01-Unit-Tests/xUnitTestSamples.Features/**, 01-Unit-Tests/UnitTestSamples.Features.Tests/**" \
-             -Dsonar.coverage.exclusions="01-Unit-Tests/xUnitTestSamples.Features/**, 01-Unit-Tests/UnitTestSamples.Features.Tests/**" \
+             -Dsonar.cs.opencover.reportsPaths="01-Unit-Tests/xUnitTestSamples.Features.Tests/coverage.opencover.xml, 01-Unit-Tests/xUnitTestSamples.Basic.Tests/coverage.opencover.xml"
+             -Dsonar.exclusions="01-Unit-Tests/xUnitTestSamples.Features/**, 01-Unit-Tests/UnitTestSamples.Features.Tests/**"
+             -Dsonar.coverage.exclusions="01-Unit-Tests/xUnitTestSamples.Features/**, 01-Unit-Tests/UnitTestSamples.Features.Tests/**"
              -V:1.0.0
               
               
