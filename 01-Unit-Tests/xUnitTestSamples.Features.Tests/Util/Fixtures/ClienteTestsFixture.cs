@@ -38,7 +38,7 @@ namespace xUnitTestSamples.Features.Tests
                     f.Date.Past(80, DateTime.Now.AddYears(-18)),
                     string.Empty,
                     active,
-                    DateTime.Now
+                    DateTime.Now.AddYears(-5)
                 ))
                 .RuleFor(c => c.Email, (f, c) => f.Internet.Email(c.Nome.ToLower(), c.Sobrenome.ToLower()));
 

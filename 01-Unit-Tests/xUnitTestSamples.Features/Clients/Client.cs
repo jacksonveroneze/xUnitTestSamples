@@ -13,8 +13,6 @@ namespace xUnitTestSamples.Features.Clients
         public string Email { get; private set; }
         public bool Ativo { get; private set; }
 
-        protected Cliente() { }
-
         public Cliente(Guid id, string nome, string sobrenome, DateTime dataNascimento, string email, bool ativo, DateTime dataCadastro)
         {
             Id = id;
@@ -25,8 +23,6 @@ namespace xUnitTestSamples.Features.Clients
             Ativo = ativo;
             DataCadastro = dataCadastro;
         }
-
-        public string NomeCompleto() => $"{Nome} {Sobrenome}";
 
         public bool EhEspecial() => DataCadastro < DateTime.Now.AddYears(-3) && Ativo;
 

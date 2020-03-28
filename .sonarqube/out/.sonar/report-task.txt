@@ -1,7 +1,0 @@
-organization=jacksonveroneze
-projectKey=xUnitTestSamples
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.6109
-dashboardUrl=https://sonarcloud.io/dashboard?id=xUnitTestSamples
-ceTaskId=AXEOODhTsvaACwcihaGM
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXEOODhTsvaACwcihaGM
