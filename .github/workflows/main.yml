@@ -1,0 +1,41 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Analyze pull request
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup sonarqube
+        uses: warchant/setup-sonar-scanner@v1
+
+      - name: 'Checkout repository on branch: ${{ github.REF }}'
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.HEAD_REF }}
+
+      - name: Retrieve entire repository history
+        run: |
+          git fetch --prune --unshallow
+          
+      - name: Setup sonarqube
+        uses: warchant/setup-sonar-scanner@v1
+      - name: Run sonarqube
+        env:
+          # to get access to secrets.SONAR_TOKEN, provide GITHUB_TOKEN
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: sonar-scanner
+             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+             -Dsonar.organization=jacksonveroneze
+             -Dsonar.host.url=https://sonarcloud.io/
+             -Dsonar.projectKey=xUnitTestSamples
