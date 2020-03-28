@@ -32,10 +32,15 @@ jobs:
         uses: warchant/setup-sonar-scanner@v1
       - name: Run sonarqube
         env:
-          # to get access to secrets.SONAR_TOKEN, provide GITHUB_TOKEN
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: sonar-scanner
              -Dsonar.login=${{ secrets.SONAR_TOKEN }}
              -Dsonar.organization=jacksonveroneze
              -Dsonar.host.url=https://sonarcloud.io/
              -Dsonar.projectKey=xUnitTestSamples
+             -Dsonar.cs.opencover.reportsPaths="01-Unit-Tests/xUnitTestSamples.Features.Tests/coverage.opencover.xml, 01-Unit-Tests/xUnitTestSamples.Basic.Tests/coverage.opencover.xml" \
+             -Dsonar.exclusions="01-Unit-Tests/xUnitTestSamples.Features/**, 01-Unit-Tests/UnitTestSamples.Features.Tests/**" \
+             -Dsonar.coverage.exclusions="01-Unit-Tests/xUnitTestSamples.Features/**, 01-Unit-Tests/UnitTestSamples.Features.Tests/**" \
+             -V:1.0.0
+              
+              
