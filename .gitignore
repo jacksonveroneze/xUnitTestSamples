@@ -350,3 +350,4 @@ MigrationBackup/
 .ionide/
 
 .sonarqube/
+coverage.opencover.xml

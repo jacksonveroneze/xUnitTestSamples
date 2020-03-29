@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CoverageSession>
-  <Summary numSequencePoints="120" visitedSequencePoints="94" numBranchPoints="24" visitedBranchPoints="17" sequenceCoverage="78.33" branchCoverage="70.83" maxCyclomaticComplexity="48" minCyclomaticComplexity="48" visitedClasses="6" numClasses="6" visitedMethods="22" numMethods="31" />
+  <Summary numSequencePoints="120" visitedSequencePoints="95" numBranchPoints="24" visitedBranchPoints="18" sequenceCoverage="79.16" branchCoverage="75" maxCyclomaticComplexity="48" minCyclomaticComplexity="48" visitedClasses="6" numClasses="6" visitedMethods="22" numMethods="31" />
   <Modules>
-    <Module hash="8F924C81-6289-4850-838F-0816F36A951E">
+    <Module hash="B5A66F6A-A71D-4736-A47D-25533795613C">
       <ModulePath>xUnitTestSamples.Features.dll</ModulePath>
-      <ModuleTime>2020-03-28T08:07:38</ModuleTime>
+      <ModuleTime>2020-03-29T02:40:24</ModuleTime>
       <ModuleName>xUnitTestSamples.Features</ModuleName>
       <Files>
         <File uid="1" fullPath="/Users/jackson/workspace/xUnitTestSamples/01-Unit-Tests/xUnitTestSamples.Features/Core/CpfValidation.cs" />
@@ -70,7 +70,7 @@
           </Methods>
         </Class>
         <Class>
-          <Summary numSequencePoints="11" visitedSequencePoints="8" numBranchPoints="4" visitedBranchPoints="2" sequenceCoverage="72.72" branchCoverage="50" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="5" numMethods="6" />
+          <Summary numSequencePoints="11" visitedSequencePoints="9" numBranchPoints="4" visitedBranchPoints="3" sequenceCoverage="81.81" branchCoverage="75" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="5" numMethods="6" />
           <FullName>xUnitTestSamples.Features.Core.Entity</FullName>
           <Methods>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
@@ -106,26 +106,26 @@
               <BranchPoints />
               <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="13" ec="1" el="13" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
             </Method>
-            <Method cyclomaticComplexity="4" nPathComplexity="0" sequenceCoverage="66.66" branchCoverage="50" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
-              <Summary numSequencePoints="6" visitedSequencePoints="4" numBranchPoints="4" visitedBranchPoints="2" sequenceCoverage="66.66" branchCoverage="50" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+            <Method cyclomaticComplexity="4" nPathComplexity="0" sequenceCoverage="83.33" branchCoverage="75" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="6" visitedSequencePoints="5" numBranchPoints="4" visitedBranchPoints="3" sequenceCoverage="83.33" branchCoverage="75" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
               <MetadataToken />
               <Name>System.Boolean xUnitTestSamples.Features.Core.Entity::Equals(System.Object)</Name>
               <FileRef uid="2" />
               <SequencePoints>
-                <SequencePoint vc="1" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="17" ordinal="1" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="19" ordinal="2" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="17" ordinal="1" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="3" uspid="19" ordinal="2" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="2" />
                 <SequencePoint vc="0" uspid="20" ordinal="3" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="2" />
                 <SequencePoint vc="1" uspid="22" ordinal="4" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="1" uspid="23" ordinal="5" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="2" uspid="23" ordinal="5" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="2" />
               </SequencePoints>
               <BranchPoints>
-                <BranchPoint vc="0" uspid="19" ordinal="0" path="0" offset="14" offsetend="16" sl="19" fileid="2" />
+                <BranchPoint vc="1" uspid="19" ordinal="0" path="0" offset="14" offsetend="16" sl="19" fileid="2" />
                 <BranchPoint vc="1" uspid="19" ordinal="1" path="1" offset="14" offsetend="20" sl="19" fileid="2" />
                 <BranchPoint vc="0" uspid="20" ordinal="2" path="0" offset="26" offsetend="28" sl="20" fileid="2" />
                 <BranchPoint vc="1" uspid="20" ordinal="3" path="1" offset="26" offsetend="32" sl="20" fileid="2" />
               </BranchPoints>
-              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="16" ec="1" el="23" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="16" ec="1" el="23" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
             </Method>
             <Method cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
               <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />

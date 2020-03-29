@@ -2,9 +2,9 @@
 <CoverageSession>
   <Summary numSequencePoints="34" visitedSequencePoints="34" numBranchPoints="34" visitedBranchPoints="34" sequenceCoverage="1" branchCoverage="1" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="5" numClasses="5" visitedMethods="11" numMethods="11" />
   <Modules>
-    <Module hash="2F7C5489-5C79-4621-8EB0-4E3363BAB130">
+    <Module hash="78D68E11-A70F-4370-A551-889D36E76612">
       <ModulePath>/Users/jackson/workspace/xUnitTestSamples/01-Unit-Tests/xUnitTestSamples.Basic.Tests/bin/Debug/netcoreapp3.1/xUnitTestSamples.Basic.dll</ModulePath>
-      <ModuleTime>2020-03-28T08:07:33</ModuleTime>
+      <ModuleTime>2020-03-29T02:40:21</ModuleTime>
       <ModuleName>xUnitTestSamples.Basic</ModuleName>
       <Files>
         <File uid="1" fullPath="/Users/jackson/workspace/xUnitTestSamples/01-Unit-Tests/xUnitTestSamples.Basic/Agent.cs" />
