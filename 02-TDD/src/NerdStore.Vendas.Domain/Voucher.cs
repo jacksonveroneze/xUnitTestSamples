@@ -48,7 +48,6 @@ namespace NerdStore.Vendas.Domain
             }
         }
     }
-
     public class VoucherAplicavelValidation : AbstractValidator<Voucher>
     {
         public static string CodigoErroMsg => "Voucher sem código válido.";

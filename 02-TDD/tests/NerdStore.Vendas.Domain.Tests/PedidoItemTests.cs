@@ -11,7 +11,7 @@ namespace NerdStore.Vendas.Domain.Tests
         public void AdicionarItemPedido_UnidadesItemAbaixoDOPermitido_DeveRetornarException()
         {
             // Arrange & Act & Assert
-            Assert.Throws<DomainException>(() => new PedidoItem(Guid.NewGuid(), "Produto Testes", Pedido.MIN_UNIDADES_ITEM - 1, 100));
+            Assert.Throws<DomainException>(() => new PedidoItem(Guid.NewGuid(), Pedido.MIN_UNIDADES_ITEM - 1, 100));
         }
     }
 }

@@ -26,7 +26,7 @@ namespace NerdStore.Vendas.Application.Commands
             if (!ValidarComando(message)) return false;
 
             var pedido = await _pedidoRepository.ObterPedidoRascunhoPorClienteId(message.ClienteId);
-            var pedidoItem = new PedidoItem(message.ProdutoId, message.Nome, message.Quantidade, message.ValorUnitario);
+            var pedidoItem = new PedidoItem(message.ProdutoId, message.Quantidade, message.ValorUnitario);
 
             if (pedido == null)
             {
