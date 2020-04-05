@@ -1,15 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="FluentValidator" Version="2.0.4" />
+      <Compile Remove="Class1.cs" />
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Remove="Class1.cs" />
+      <PackageReference Include="FluentValidation" Version="8.6.2" />
     </ItemGroup>
 
     <ItemGroup>

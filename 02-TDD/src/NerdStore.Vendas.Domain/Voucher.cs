@@ -1,18 +1,25 @@
-﻿using System;
-using FluentValidation;
+﻿using FluentValidation;
 using FluentValidation.Results;
+using System;
 
 namespace NerdStore.Vendas.Domain
 {
     public class Voucher
     {
         public string Codigo { get; private set; }
+
         public decimal? PercentualDesconto { get; private set; }
+
         public decimal? ValorDesconto { get; private set; }
+
         public TipoDescontoVoucher TipoDescontoVoucher { get; private set; }
+
         public int Quantidade { get; private set; }
+
         public DateTime DataValidade { get; private set; }
+
         public bool Ativo { get; private set; }
+
         public bool Utilizado { get; private set; }
 
         public Voucher(string codigo, decimal? percentualDesconto, decimal? valorDesconto, int quantidade,
@@ -29,8 +36,16 @@ namespace NerdStore.Vendas.Domain
         }
 
         public ValidationResult ValidarSeAplicavel()
+            => new VoucherAplicavelValidation().Validate(this);
+
+        public static class VoucherFactory
         {
-            return new VoucherAplicavelValidation().Validate(this);
+            public static Voucher NovoVoucher(string codigo, decimal? percentualDesconto, decimal? valorDesconto, int quantidade,
+                TipoDescontoVoucher tipoDescontoVoucher, DateTime dataValidade, bool ativo, bool utilizado)
+            {
+                return new Voucher(codigo, percentualDesconto, valorDesconto, quantidade,
+                    tipoDescontoVoucher, dataValidade, ativo, utilizado);
+            }
         }
     }
 
@@ -86,8 +101,6 @@ namespace NerdStore.Vendas.Domain
         }
 
         protected static bool DataVencimentoSuperiorAtual(DateTime dataValidade)
-        {
-            return dataValidade >= DateTime.Now;
-        }
+            => dataValidade >= DateTime.Now;
     }
 }
