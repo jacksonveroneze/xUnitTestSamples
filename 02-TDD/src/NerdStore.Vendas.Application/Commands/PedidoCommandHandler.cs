@@ -9,10 +9,10 @@ using NerdStore.Vendas.Domain;
 
 namespace NerdStore.Vendas.Application.Commands
 {
-    public class PedidoCommandHandler : 
-        IRequestHandler<AdicionarItemPedidoCommand, bool>
+    public class PedidoCommandHandler : IRequestHandler<AdicionarItemPedidoCommand, bool>
     {
         private readonly IPedidoRepository _pedidoRepository;
+
         private readonly IMediator _mediator;
 
         public PedidoCommandHandler(IPedidoRepository pedidoRepository, IMediator mediator)
@@ -31,6 +31,7 @@ namespace NerdStore.Vendas.Application.Commands
             if (pedido == null)
             {
                 pedido = Pedido.PedidoFactory.NovoPedidoRascunho(message.ClienteId);
+
                 pedido.AdicionarItem(pedidoItem);
 
                 _pedidoRepository.Adicionar(pedido);
@@ -48,11 +49,11 @@ namespace NerdStore.Vendas.Application.Commands
                 {
                     _pedidoRepository.AdicionarItem(pedidoItem);
                 }
-                
+
                 _pedidoRepository.Atualizar(pedido);
             }
-            
-            pedido.AdicionarEvento(new PedidoItemAdicionadoEvent(pedido.ClienteId, pedido.Id, message.ProdutoId, 
+
+            pedido.AdicionarEvento(new PedidoItemAdicionadoEvent(pedido.ClienteId, pedido.Id, message.ProdutoId,
                 message.Nome, message.ValorUnitario, message.Quantidade));
 
             return await _pedidoRepository.UnitOfWork.Commit();
@@ -63,9 +64,7 @@ namespace NerdStore.Vendas.Application.Commands
             if (message.EhValido()) return true;
 
             foreach (var error in message.ValidationResult.Errors)
-            {
                 _mediator.Publish(new DomainNotification(message.MessageType, error.ErrorMessage));
-            }
 
             return false;
         }

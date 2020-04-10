@@ -2,9 +2,9 @@
 <CoverageSession>
   <Summary numSequencePoints="120" visitedSequencePoints="95" numBranchPoints="22" visitedBranchPoints="16" sequenceCoverage="79.16" branchCoverage="72.72" maxCyclomaticComplexity="47" minCyclomaticComplexity="47" visitedClasses="6" numClasses="6" visitedMethods="22" numMethods="31" />
   <Modules>
-    <Module hash="44F1DA86-4782-42E0-9161-52B179350017">
+    <Module hash="C48D7186-8CA6-4984-B90C-B90321C7C4A8">
       <ModulePath>xUnitTestSamples.Features.dll</ModulePath>
-      <ModuleTime>2020-04-05T09:39:14</ModuleTime>
+      <ModuleTime>2020-04-05T11:23:50</ModuleTime>
       <ModuleName>xUnitTestSamples.Features</ModuleName>
       <Files>
         <File uid="1" fullPath="C:\workspace\xUnitTestSamples\01-Unit-Tests\xUnitTestSamples.Features\Core\CpfValidation.cs" />

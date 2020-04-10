@@ -8,8 +8,6 @@ namespace NerdStore.Core.Messages
         public DateTime Timestamp { get; private set; }
 
         protected Event()
-        {
-            Timestamp = DateTime.Now;
-        }
+            => Timestamp = DateTime.Now;
     }
 }

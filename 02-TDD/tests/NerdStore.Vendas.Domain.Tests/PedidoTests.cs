@@ -44,7 +44,7 @@ namespace NerdStore.Vendas.Domain.Tests
             // Assert
             Assert.Equal(300, pedido.ValorTotal);
             Assert.Equal(1, pedido.PedidoItems.Count);
-            Assert.Equal(3, pedido.PedidoItems.FirstOrDefault(x => x.ProdutoId == produtoId).Quantidade);
+            Assert.Equal(3, pedido.PedidoItems.FirstOrDefault(x => x.ProdutoId == produtoId)?.Quantidade);
         }
 
         [Fact(DisplayName = "Adicionar Item Pedido Acima de 15")]
@@ -249,7 +249,7 @@ namespace NerdStore.Vendas.Domain.Tests
             Voucher voucher = Voucher.VoucherFactory.NovoVoucher("PROMO-15-REAIS", null, 15, 1,
                 TipoDescontoVoucher.Valor, DateTime.Now.AddDays(15), true, false);
 
-            decimal valorDesconto = pedido.ValorTotal - (decimal)voucher?.ValorDesconto;
+            decimal? valorDesconto = pedido.ValorTotal - voucher.ValorDesconto;
 
             // Act
             pedido.AplicarVoucher(voucher);

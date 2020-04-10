@@ -2,9 +2,9 @@
 <CoverageSession>
   <Summary numSequencePoints="40" visitedSequencePoints="40" numBranchPoints="16" visitedBranchPoints="14" sequenceCoverage="100" branchCoverage="87.5" maxCyclomaticComplexity="25" minCyclomaticComplexity="25" visitedClasses="5" numClasses="5" visitedMethods="12" numMethods="12" />
   <Modules>
-    <Module hash="5C3995A0-6AD1-4F50-9EF3-00C44F6E1E90">
+    <Module hash="34C8A3F8-5732-4B20-9493-7C5EBECB96D1">
       <ModulePath>xUnitTestSamples.Basic.dll</ModulePath>
-      <ModuleTime>2020-04-05T09:39:10</ModuleTime>
+      <ModuleTime>2020-04-05T11:23:49</ModuleTime>
       <ModuleName>xUnitTestSamples.Basic</ModuleName>
       <Files>
         <File uid="1" fullPath="C:\workspace\xUnitTestSamples\01-Unit-Tests\xUnitTestSamples.Basic\Agent.cs" />
