@@ -32,7 +32,11 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 3.1.101
-          
+
+      - name: Install dotnet-sonarscanner
+        run: |
+          dotnet tool install --global dotnet-sonarscanner --version 4.8.0
+
       - name: Run tests
         run: |
           sh -x run-sonar.sh
