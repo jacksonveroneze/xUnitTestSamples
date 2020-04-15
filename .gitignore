@@ -351,3 +351,4 @@ MigrationBackup/
 
 .sonarqube/
 coverage.opencover.xml
+.idea
