@@ -37,13 +37,17 @@ jobs:
         run: |
           dotnet tool install --global dotnet-sonarscanner --version 4.8.0
 
+      - name: Clear files
+        run: |
+          rm -rf .sonarqube
+          FILES=$(find . -type f -name "*.opencover.xml")
+          
       - name: Run tests
         run: |
+          dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+
+      - name: Run sonar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
           sh -x run-sonar.sh
-
-
-              
-              
-              
-              
-              
