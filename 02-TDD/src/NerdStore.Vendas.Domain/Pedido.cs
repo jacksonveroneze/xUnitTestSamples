@@ -14,7 +14,11 @@ namespace NerdStore.Vendas.Domain
         protected Pedido()
             => _pedidoItems = new List<PedidoItem>();
 
+        public int Codigo { get; private set; }
+
         public Guid ClienteId { get; private set; }
+
+        public Guid? VoucherId { get; private set; }
 
         public decimal ValorTotal { get; private set; }
 
@@ -29,6 +33,8 @@ namespace NerdStore.Vendas.Domain
         private readonly List<PedidoItem> _pedidoItems;
 
         public IReadOnlyCollection<PedidoItem> PedidoItems => _pedidoItems;
+
+        public DateTime DataCadastro { get; set; }
 
         public ValidationResult AplicarVoucher(Voucher voucher)
         {
@@ -140,6 +146,12 @@ namespace NerdStore.Vendas.Domain
             _pedidoItems.Remove(pedidoItem);
 
             CalcularValorPedido();
+        }
+
+        public void AtualizarUnidades(PedidoItem item, int unidades)
+        {
+            item.AtualizarUnidades(unidades);
+            AtualizarItem(item);
         }
 
         public void TornarRascunho()

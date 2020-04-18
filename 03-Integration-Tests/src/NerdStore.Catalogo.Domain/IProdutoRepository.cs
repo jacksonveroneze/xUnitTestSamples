@@ -1,7 +1,7 @@
-﻿using System;
+﻿using NerdStore.Core.Data;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using NerdStore.Core.Data;
 
 namespace NerdStore.Catalogo.Domain
 {
